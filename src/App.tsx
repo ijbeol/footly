@@ -142,7 +142,7 @@ export default function App() {
   const remaining = deck.filter(name => !revealed.has(name))
 
   return (
-    <div className="max-w-xl w-full mx-auto p-2 sm:p-6">
+    <div className="max-w-xl w-full mx-auto p-2 sm:p-6 bg-white text-gray-900 min-h-screen">
       <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-center">Football Connections</h1>
 
       <div className="flex flex-wrap justify-center gap-2 mb-4">
