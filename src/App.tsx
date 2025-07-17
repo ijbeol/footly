@@ -177,6 +177,9 @@ export default function App() {
           <div className="text-center text-xs sm:text-sm mb-2">
             Mode: {mode === 'daily' ? 'Daily Puzzle' : 'Random Puzzle'}
           </div>
+          <div className="text-center text-xs sm:text-sm mb-2">
+            Solve Footly every day to grow your streak!
+          </div>
           <div className="text-center mb-4 text-xs sm:text-base">
             Streak: {stats.currentStreak} | Best: {stats.bestStreak}
           </div>
