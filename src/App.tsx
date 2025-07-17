@@ -23,6 +23,7 @@ export default function App() {
   const [lastHintCategory, setLastHintCategory] = useState<string | null>(null)
   const [guesses, setGuesses] = useState<string[][]>([])
   const [incorrectCount, setIncorrectCount] = useState(0)
+  const [showHelp, setShowHelp] = useState(false)
   const maxIncorrect = 4
   const [puzzleId, setPuzzleId] = useState<string>('')
 
@@ -137,9 +138,26 @@ export default function App() {
     <>
       <div className="min-h-screen w-full bg-white flex items-center justify-center">
         <div className="w-full max-w-xl mx-auto p-4 sm:p-6 text-gray-900">
-          <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-center">
-            Football Connections
-          </h1>
+          <div className="flex flex-col mb-4">
+            <h1 className="text-2xl sm:text-3xl font-bold text-center mb-2">Football Connections</h1>
+            <div className="flex justify-center mb-4">
+              <button
+                onClick={() => setShowHelp(!showHelp)}
+                className="text-sm text-indigo-600 hover:underline"
+              >How to play</button>
+            </div>
+            {showHelp && (
+              <div className="mb-4 p-3 bg-gray-50 border border-gray-200 rounded text-xs sm:text-sm">
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Select exactly four player cards that you think form a category.</li>
+                  <li>Click <strong>Submit</strong> to check your guess.</li>
+                  <li>You have {maxIncorrect} wrong guesses before the game ends.</li>
+                  <li>Use up to two <strong>Hints</strong> to reveal 2–3 related players.</li>
+                  <li>Solve all four groups to win and see confetti!</li>
+                </ul>
+              </div>
+            )}
+          </div>
 
           <div className="flex flex-wrap justify-center gap-2 mb-4">
             <button
