@@ -134,7 +134,8 @@ export default function App() {
         .join('')
     )
     const header = `Footly Puzzle #${puzzleId}`
-    const text = [header, ...rows].join('\n')
+    const link = 'https://footly-ten.vercel.app/'
+    const text = [header, ...rows, link].join('\n')
     navigator.clipboard.writeText(text).then(() => alert('Results copied!'))
   }
 
