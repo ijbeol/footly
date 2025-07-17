@@ -1,5 +1,5 @@
 // src/App.tsx
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import confetti from 'canvas-confetti'
 import { generatePuzzle } from './utils/puzzleGenerator'
 import type { PuzzleGroup } from './utils/puzzleGenerator'
@@ -167,7 +167,7 @@ export default function App() {
 
       <div className="space-y-4">
         {found.map((g, i) => {
-          const facts = funFacts[g.category] || []
+          const facts = funFacts[g.category as keyof typeof funFacts] || []
           const fact = facts[Math.floor(Math.random() * facts.length)]
           return (
             <div key={i} className="p-2 bg-green-100 rounded">
