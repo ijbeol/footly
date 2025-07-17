@@ -10,7 +10,7 @@ export interface PlayerGridProps {
 
 export const PlayerGrid: React.FC<PlayerGridProps> = ({ players, active, hintRevealed, onToggle }) => {
   return (
-    <div className="grid grid-cols-4 gap-3">
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
       {players.map(name => (
         <PlayerCard
           key={name}
