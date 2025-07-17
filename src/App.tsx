@@ -6,6 +6,7 @@ import type { PuzzleGroup } from './utils/puzzleGenerator'
 import { shuffle } from './utils/shuffle'
 import { PlayerGrid } from './components/PlayerGrid'
 import funFacts from './data/funFacts.json'
+import { Analytics } from '@vercel/analytics/react'
 
 type Stats = { lastPlayed: string; currentStreak: number; bestStreak: number }
 
@@ -133,87 +134,92 @@ export default function App() {
   const remaining = deck.filter(name => !revealed.has(name))
 
   return (
-    <div className="min-h-screen w-full bg-white flex items-center justify-center">
-      <div className="w-full max-w-xl mx-auto p-4 sm:p-6 text-gray-900">
-        <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-center">
-          Football Connections
-        </h1>
+    <>
+      <div className="min-h-screen w-full bg-white flex items-center justify-center">
+        <div className="w-full max-w-xl mx-auto p-4 sm:p-6 text-gray-900">
+          <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-center">
+            Football Connections
+          </h1>
 
-        <div className="flex flex-wrap justify-center gap-2 mb-4">
-          <button
-            onClick={startDaily}
-            className={`px-3 py-1 rounded text-xs sm:text-base ${
-              mode === 'daily' ? 'bg-indigo-600 text-white' : 'bg-gray-200'
-            }`}
-          >Daily Game</button>
-          <button
-            onClick={startRandom}
-            className={`px-3 py-1 rounded text-xs sm:text-base ${
-              mode === 'random' ? 'bg-indigo-600 text-white' : 'bg-gray-200'
-            }`}
-          >Random Game</button>
-        </div>
-
-        <div className="text-center text-xs sm:text-sm mb-2">
-          Mode: {mode === 'daily' ? 'Daily Puzzle' : 'Random Puzzle'}
-        </div>
-        <div className="text-center mb-4 text-xs sm:text-base">
-          Streak: {stats.currentStreak} | Best: {stats.bestStreak}
-        </div>
-        <div className="text-center mb-2 text-xs sm:text-base">
-          Guesses left: {maxIncorrect - incorrectCount}
-        </div>
-
-        <div className="space-y-4">
-          {found.map((g, i) => {
-            const facts = (funFacts as Record<string,string[]>)[g.category] || []
-            const fact = facts[Math.floor(Math.random() * facts.length)]
-            return (
-              <div key={i} className="p-2 bg-green-100 rounded text-xs sm:text-base">
-                <strong>{g.category}</strong>: {g.players.join(', ')}
-                <div className="italic text-xs sm:text-sm mt-1">"{fact}"</div>
-              </div>
-            )
-          })}
-
-          <PlayerGrid
-            players={remaining}
-            active={selected}
-            hintRevealed={hintRevealed}
-            onToggle={toggle}
-          />
-
-          <div className="flex flex-wrap justify-center gap-2 sm:space-x-3 mt-4">
+          <div className="flex flex-wrap justify-center gap-2 mb-4">
             <button
-              onClick={submit}
-              disabled={selected.size !== 4}
-              className="px-3 py-2 sm:px-4 sm:py-2 bg-blue-600 text-white rounded disabled:opacity-50 text-xs sm:text-base"
-            >Submit</button>
+              onClick={startDaily}
+              className={`px-3 py-1 rounded text-xs sm:text-base ${
+                mode === 'daily' ? 'bg-indigo-600 text-white' : 'bg-gray-200'
+              }`}
+            >Daily Game</button>
             <button
-              onClick={useHint}
-              disabled={hintsUsed >= 2}
-              className="px-3 py-2 sm:px-4 sm:py-2 bg-yellow-400 text-white rounded disabled:opacity-50 text-xs sm:text-base"
-            >Hint ({hintsUsed}/2)</button>
-            <button
-              onClick={giveUp}
-              className="px-3 py-2 sm:px-4 sm:py-2 bg-gray-300 rounded text-xs sm:text-base"
-            >Give Up</button>
-            <button
-              onClick={mode === 'daily' ? startRandom : startDaily}
-              className="px-3 py-2 sm:px-4 sm:py-2 bg-indigo-500 text-white rounded text-xs sm:text-base"
-            >New Game</button>
+              onClick={startRandom}
+              className={`px-3 py-1 rounded text-xs sm:text-base ${
+                mode === 'random' ? 'bg-indigo-600 text-white' : 'bg-gray-200'
+              }`}
+            >Random Game</button>
           </div>
 
-          {(found.length === 4 || incorrectCount >= maxIncorrect) && (
-            <div className="text-center mt-4">
+          <div className="text-center text-xs sm:text-sm mb-2">
+            Mode: {mode === 'daily' ? 'Daily Puzzle' : 'Random Puzzle'}
+          </div>
+          <div className="text-center mb-4 text-xs sm:text-base">
+            Streak: {stats.currentStreak} | Best: {stats.bestStreak}
+          </div>
+          <div className="text-center mb-2 text-xs sm:text-base">
+            Guesses left: {maxIncorrect - incorrectCount}
+          </div>
+
+          <div className="space-y-4">
+            {found.map((g, i) => {
+              const facts = (funFacts as Record<string,string[]>)[g.category] || []
+              const fact = facts[Math.floor(Math.random() * facts.length)]
+              return (
+                <div key={i} className="p-2 bg-green-100 rounded text-xs sm:text-base">
+                  <strong>{g.category}</strong>: {g.players.join(', ')}
+                  <div className="italic text-xs sm:text-sm mt-1">"{fact}"</div>
+                </div>
+              )
+            })}
+
+            <PlayerGrid
+              players={remaining}
+              active={selected}
+              hintRevealed={hintRevealed}
+              onToggle={toggle}
+            />
+
+            <div className="flex flex-wrap justify-center gap-2 sm:space-x-3 mt-4">
               <button
-                onClick={shareResults}
-                className="px-3 py-2 sm:px-4 sm:py-2 bg-green-600 text-white rounded text-xs sm:text-base"
-              >Share Results</button>
+                onClick={submit}
+                disabled={selected.size !== 4}
+                className="px-3 py-2 sm:px-4 sm:py-2 bg-blue-600 text-white rounded disabled:opacity-50 text-xs sm:text-base"
+              >Submit</button>
+              <button
+                onClick={useHint}
+                disabled={hintsUsed >= 2}
+                className="px-3 py-2 sm:px-4 sm:py-2 bg-yellow-400 text-white rounded disabled:opacity-50 text-xs sm:text-base"
+              >Hint ({hintsUsed}/2)</button>
+              <button
+                onClick={giveUp}
+                className="px-3 py-2 sm:px-4 sm:py-2 bg-gray-300 rounded text-xs sm:text-base"
+              >Give Up</button>
+              <button
+                onClick={mode === 'daily' ? startRandom : startDaily}
+                className="px-3 py-2 sm:px-4 sm:py-2 bg-indigo-500 text-white rounded text-xs sm:text-base"
+              >New Game</button>
             </div>
-          )}
+
+            {(found.length === 4 || incorrectCount >= maxIncorrect) && (
+              <div className="text-center mt-4">
+                <button
+                  onClick={shareResults}
+                  className="px-3 py-2 sm:px-4 sm:py-2 bg-green-600 text-white rounded text-xs sm:text-base"
+                >Share Results</button>
+              </div>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+
+      {/* Vercel Analytics */}
+      <Analytics />
+    </>
   )
 }
