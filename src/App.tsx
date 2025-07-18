@@ -115,9 +115,9 @@ export default function App() {
       g.map(n => colorMap[puzzle.findIndex(pg => pg.players.includes(n))] || '⬛')
        .join('')
     )
-    const header = `Footly Puzzle #${today}`
+    const header = `Footly Puzzle #${today} | Streak: ${stats.currentStreak} | Best Streak: ${stats.bestStreak}`
     navigator.clipboard
-      .writeText([header, ...rows, 'https://footly-ten.vercel.app/'].join('\n'))
+      .writeText([header, ...rows, 'https://footly-game.vercel.app/'].join('\n'))
       .then(() => alert('Results copied!'))
   }
 
