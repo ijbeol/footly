@@ -5,7 +5,7 @@
   ],
   "Played for Arsenal and Barcelona": [
     "Thierry Henry finished his prime at Barcelona, winning the treble in 2009.",
-    "Cesc Fàbregas returned to Arsenal after winning multiple titles with Barcelona."
+    "Cesc Fàbregas rejoined Barcelona in 2011 and won multiple trophies before returning to the Premier League."
   ],
   "Played for Bayern Munich and Borussia Dortmund": [
     "Robert Lewandowski won back-to-back Bundesliga titles with Dortmund and Bayern.",
@@ -38,10 +38,6 @@
   "Scored 50+ international goals": [
     "Ali Daei was the first player to score over 100 international goals.",
     "Robert Lewandowski surpassed 70 international goals for Poland by 2022."
-  ],
-  "Captained their country to a European Championship title": [
-    "Iker Casillas captained Spain to Euro 2008 and 2012 triumphs.",
-    "Cristiano Ronaldo led Portugal to Euro 2016 victory as captain."
   ],
   "Won Copa América and UEFA Champions League": [
     "Lionel Messi has won four Champions Leagues and one Copa América title.",
@@ -99,10 +95,6 @@
     "Neymar's €222m move to PSG remains the most expensive transfer ever.",
     "João Félix’s €126m transfer to Atlético Madrid broke club records."
   ],
-  "Won the UEFA Champions League as player and manager": [
-    "Pep Guardiola won the Champions League as Barcelona’s manager in 2009 and 2011.",
-    "Zinedine Zidane won as Real Madrid manager in 2016 after starring as a player."
-  ],
   "South American players who won the Premier League": [
     "Fernandinho won four Premier League titles with Manchester City.",
     "Gabriel Jesus scored in his debut season to help City win the league."
@@ -115,8 +107,64 @@
     "David Villa’s 5 goals in Euro 2008 won him the Golden Boot.",
     "Antoine Griezmann won Golden Boot at Euro 2016 with 6 goals."
   ],
-  "Players named Luis who have played for Liverpool": [
-    "Luis Suárez won the PL Golden Boot in 2013–14 for Liverpool.",
-    "Luis Díaz became a fan favorite after scoring on his debut in 2022."
+  "Played for Real Madrid and Juventus": [
+    "Zinedine Zidane joined Real Madrid from Juventus in 2001 for a world-record fee at the time.",
+    "Cristiano Ronaldo scored 21 Serie A goals in his debut season at Juventus after nine trophy-laden years at Real Madrid."
+  ],
+  "Played for Arsenal and Chelsea": [
+    "Ashley Cole won two Premier League titles with Chelsea after leaving Arsenal's 'Invincibles' squad in 2006.",
+    "Cesc Fàbregas left Arsenal to join Barcelona, then returned to London and won two Premier League titles with Chelsea."
+  ],
+  "Played for Chelsea and Liverpool": [
+    "Fernando Torres scored 81 goals for Liverpool before a £50m move to Chelsea where he won the 2012 Champions League.",
+    "Daniel Sturridge won the Champions League with Chelsea in 2012 and later became Liverpool’s top scorer in the 2013–14 season."
+  ],
+  "Played for Arsenal and Manchester City": [
+    "Kolo Touré and Gaël Clichy were part of Arsenal's 2004 Invincibles before winning Premier League titles with Manchester City.",
+    "Samir Nasri was Arsenal’s Player of the Season in 2010–11 and later won two league titles after his transfer to Man City."
+  ],
+  "Played for Liverpool and Manchester City": [
+    "Raheem Sterling moved from Liverpool to Man City in 2015 and won four Premier League titles at City.",
+    "James Milner won two league titles with Man City and later lifted the Champions League with Liverpool in 2019."
+  ],
+  "Played for Real Madrid and Tottenham Hotspur": [
+    "Gareth Bale became the world's most expensive player in 2013 when he moved from Spurs to Real, going on to win four Champions League titles with Madrid.",
+    "Luka Modrić left Tottenham for Real Madrid in 2012 and won the 2018 Ballon d'Or after four Champions League triumphs."
+  ],
+  "Played for Arsenal and Juventus": [
+    "Thierry Henry had a brief spell at Juventus in 1999 before becoming Arsenal's all-time leading scorer.",
+    "Wojciech Szczęsny won multiple Serie A titles with Juventus after leaving Arsenal in 2017."
+  ],
+  "Played for AC Milan and Juventus": [
+    "Andrea Pirlo won two Champions League titles with AC Milan before joining Juventus and winning four Serie A titles.",
+    "Leonardo Bonucci spent one season at AC Milan in 2017–18 between seven consecutive Serie A titles with Juventus."
+  ],
+  "Played for Real Madrid and Liverpool": [
+    "Steve McManaman became the first English player to win the Champions League with a foreign club when he scored in Real Madrid's 2000 final win.",
+    "Xabi Alonso won the Champions League with Liverpool in 2005 and again with Real Madrid in 2014."
+  ],
+  "Played for Barcelona and Chelsea": [
+    "Eidur Gudjohnsen scored 78 goals for Chelsea before transferring to Barcelona in 2006 and winning the Champions League in 2009.",
+    "Cesc Fàbregas came through Barcelona’s academy and later helped Chelsea win two Premier League titles."
+  ],
+  "Played for AC Milan and Barcelona": [
+    "Ronaldinho won the 2005 Ballon d'Or as a Barcelona player before joining AC Milan in 2008.",
+    "Zlatan Ibrahimović scored 16 league goals for Barcelona in 2009–10 and later led AC Milan to the Serie A title in 2011."
+  ],
+  "Won league titles in 3 of Europe's top 5 leagues": [
+    "Cristiano Ronaldo became the first player to win league titles in England, Spain and Italy.",
+    "Zlatan Ibrahimović won Serie A with three clubs and also lifted league trophies in Spain and France."
+  ],
+  "Spent entire professional career at one club": [
+    "Francesco Totti spent 24 seasons at Roma, becoming the club's record goalscorer and appearance maker.",
+    "Ryan Giggs made a club-record 963 appearances for Manchester United, winning 13 Premier League titles without a single transfer."
+  ],
+  "Scored in multiple Champions League finals": [
+    "Cristiano Ronaldo scored in three Champions League finals (2008, 2014, 2017), more than any other player.",
+    "Gareth Bale is one of few players to score in two Champions League finals, including a famous bicycle kick in 2018."
+  ],
+  "FIFA World Cup Golden Boot winners (2002–2022)": [
+    "Miroslav Klose won the 2006 Golden Boot and retired as the World Cup's all-time top scorer with 16 goals.",
+    "Kylian Mbappé scored a hat-trick in the 2022 World Cup final, earning him the Golden Boot at age 23."
   ]
 }

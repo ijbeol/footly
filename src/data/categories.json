@@ -1,122 +1,512 @@
-[
-  {
-    "category": "Played for Real Madrid and Manchester United",
-    "players": ["Cristiano Ronaldo","David Beckham","Ruud van Nistelrooy","Ángel Di María","Raphaël Varane","Casemiro"]
-  },
-  {
-    "category": "Played for Arsenal and Barcelona",
-    "players": ["Thierry Henry","Cesc Fàbregas","Alex Song","Alexis Sánchez","Héctor Bellerín"]
-  },
-  {
-    "category": "Played for Bayern Munich and Borussia Dortmund",
-    "players": ["Robert Lewandowski","Mats Hummels","Mario Götze","Niklas Süle"]
-  },
-  {
-    "category": "Played for Paris Saint-Germain and Barcelona",
-    "players": ["Ronaldinho","Zlatan Ibrahimović","Dani Alves","Neymar","Lionel Messi"]
-  },
-  {
-    "category": "Goalkeepers with 100+ international caps",
-    "players": ["Gianluigi Buffon","Iker Casillas","Hugo Lloris","Petr Čech","Manuel Neuer"]
-  },
-  {
-    "category": "Won the Premier League Golden Boot multiple times",
-    "players": ["Thierry Henry","Harry Kane","Mohamed Salah","Alan Shearer","Didier Drogba"]
-  },
-  {
-    "category": "African Footballer of the Year (2010–2024)",
-    "players": ["Yaya Touré","Riyad Mahrez","Mohamed Salah","Sadio Mané","Pierre-Emerick Aubameyang"]
-  },
-  {
-    "category": "Played for Inter Milan and Juventus",
-    "players": ["Zlatan Ibrahimović","Andrea Pirlo","Juan Cuadrado","Leonardo Bonucci"]
-  },
-  {
-    "category": "Played for Real Madrid and Chelsea",
-    "players": ["Claude Makélélé","Arjen Robben","Álvaro Morata","Eden Hazard","Thibaut Courtois"]
-  },
-  {
-    "category": "Scored 50+ international goals",
-    "players": ["Cristiano Ronaldo","Lionel Messi","Ali Daei","Neymar","Sunil Chhetri","Robert Lewandowski"]
-  },
-  {
-    "category": "Captained their country to a European Championship title",
-    "players": ["Iker Casillas","Cristiano Ronaldo","Giorgio Chiellini","Theodoros Zagorakis"]
-  },
-  {
-    "category": "Won Copa América and UEFA Champions League",
-    "players": ["Lionel Messi","Ángel Di María","Dani Alves","Carlos Tévez"]
-  },
-  {
-    "category": "Scored a hat-trick in a Champions League knockout match",
-    "players": ["Lionel Messi","Cristiano Ronaldo","Robert Lewandowski","Erling Haaland","Kylian Mbappé"]
-  },
-  {
-    "category": "Played for Atlético Madrid and Chelsea",
-    "players": ["Fernando Torres","Diego Costa","Álvaro Morata","Thibaut Courtois","Filipe Luís"]
-  },
-  {
-    "category": "FIFA World Cup Golden Ball winners",
-    "players": ["Ronaldo Nazário","Oliver Kahn","Zinedine Zidane","Diego Forlán","Lionel Messi","Luka Modrić"]
-  },
-  {
-    "category": "Won the UEFA Champions League with two different clubs",
-    "players": ["Clarence Seedorf","Samuel Eto'o","Cristiano Ronaldo","Xabi Alonso","Gerard Piqué"]
-  },
-  {
-    "category": "Won both Premier League and La Liga titles",
-    "players": ["Cristiano Ronaldo","Cesc Fàbregas","Yaya Touré","Gerard Piqué"]
-  },
-  {
-    "category": "Played for Everton and Manchester United",
-    "players": ["Wayne Rooney","Marouane Fellaini","Romelu Lukaku","Phil Neville"]
-  },
-  {
-    "category": "FIFA Puskás Award winners",
-    "players": ["Cristiano Ronaldo","Neymar","James Rodríguez","Mohamed Salah","Son Heung-min"]
-  },
-  {
-    "category": "Scored on Premier League debut",
-    "players": ["Sergio Agüero","Mohamed Salah","Pierre-Emerick Aubameyang","Marcus Rashford"]
-  },
-  {
-    "category": "Golden Boy award winners",
-    "players": ["Wayne Rooney","Lionel Messi","Kylian Mbappé","Erling Haaland","Pedri"]
-  },
-  {
-    "category": "UEFA Men's Player of the Year winners",
-    "players": ["Lionel Messi","Cristiano Ronaldo","Luka Modrić","Virgil van Dijk","Robert Lewandowski","Jorginho","Karim Benzema","Erling Haaland"]
-  },
-  {
-    "category": "Played for both AC Milan and Inter Milan",
-    "players": ["Andrea Pirlo","Zlatan Ibrahimović","Leonardo Bonucci","Clarence Seedorf","Hernán Crespo"]
-  },
-  {
-    "category": "Wore the number 7 shirt for Manchester United",
-    "players": ["David Beckham","Cristiano Ronaldo","Antonio Valencia","Edinson Cavani"]
-  },
-  {
-    "category": "Transfers worth €100 million or more",
-    "players": ["Neymar","Kylian Mbappé","João Félix","Philippe Coutinho","Cristiano Ronaldo"]
-  },
-  {
-    "category": "Won the UEFA Champions League as player and manager",
-    "players": ["Carlo Ancelotti","Pep Guardiola","Zinedine Zidane","Frank Rijkaard"]
-  },
-  {
-    "category": "South American players who won the Premier League",
-    "players": ["Sergio Agüero","Fernandinho","Gabriel Jesus","Carlos Tévez"]
-  },
-  {
-    "category": "Defenders with 10+ Premier League goals",
-    "players": ["John Terry","Leighton Baines","Marcos Alonso","Gary Cahill"]
-  },
-  {
-    "category": "European Championship Golden Boot winners",
-    "players": ["David Villa","Fernando Torres","Antoine Griezmann","Cristiano Ronaldo"]
-  },
-  {
-    "category": "Players named Luis who have played for Liverpool",
-    "players": ["Luis García","Luis Suárez","Luis Díaz","Luis Alberto"]
-  }
-]
+{
+  "categories": [
+    {
+      "category": "Played for Real Madrid and Manchester United",
+      "players": [
+        "Cristiano Ronaldo",
+        "David Beckham",
+        "Ruud van Nistelrooy",
+        "Ángel Di María",
+        "Raphaël Varane",
+        "Casemiro",
+        "Michael Owen"
+      ]
+    },
+    {
+      "category": "Played for Arsenal and Barcelona",
+      "players": [
+        "Thierry Henry",
+        "Cesc Fàbregas",
+        "Alex Song",
+        "Alexis Sánchez",
+        "Héctor Bellerín",
+        "Pierre-Emerick Aubameyang",
+        "Thomas Vermaelen",
+        "Marc Overmars"
+      ]
+    },
+    {
+      "category": "Played for Bayern Munich and Borussia Dortmund",
+      "players": [
+        "Robert Lewandowski",
+        "Mats Hummels",
+        "Mario Götze",
+        "Niklas Süle",
+        "Sebastian Rode",
+        "Torsten Frings"
+      ]
+    },
+    {
+      "category": "Played for Paris Saint-Germain and Barcelona",
+      "players": [
+        "Ronaldinho",
+        "Zlatan Ibrahimović",
+        "Dani Alves",
+        "Neymar",
+        "Lionel Messi",
+        "Thiago Motta",
+        "Ludovic Giuly"
+      ]
+    },
+    {
+      "category": "Goalkeepers with 100+ international caps",
+      "players": [
+        "Gianluigi Buffon",
+        "Iker Casillas",
+        "Hugo Lloris",
+        "Petr Čech",
+        "Manuel Neuer",
+        "Edwin van der Sar",
+        "Keylor Navas"
+      ]
+    },
+    {
+      "category": "Won the Premier League Golden Boot multiple times",
+      "players": [
+        "Thierry Henry",
+        "Harry Kane",
+        "Mohamed Salah",
+        "Alan Shearer",
+        "Didier Drogba",
+        "Robin van Persie",
+        "Michael Owen"
+      ]
+    },
+    {
+      "category": "African Footballer of the Year (2010–2024)",
+      "players": [
+        "Yaya Touré",
+        "Riyad Mahrez",
+        "Mohamed Salah",
+        "Sadio Mané",
+        "Pierre-Emerick Aubameyang",
+        "Samuel Eto'o"
+      ]
+    },
+    {
+      "category": "Played for Inter Milan and Juventus",
+      "players": [
+        "Zlatan Ibrahimović",
+        "Andrea Pirlo",
+        "Juan Cuadrado",
+        "Leonardo Bonucci",
+        "Patrick Vieira",
+        "Christian Vieri",
+        "Edgar Davids"
+      ]
+    },
+    {
+      "category": "Played for Real Madrid and Chelsea",
+      "players": [
+        "Claude Makélélé",
+        "Arjen Robben",
+        "Álvaro Morata",
+        "Eden Hazard",
+        "Thibaut Courtois",
+        "Nicolas Anelka",
+        "Michael Essien",
+        "Ricardo Carvalho"
+      ]
+    },
+    {
+      "category": "Scored 50+ international goals",
+      "players": [
+        "Cristiano Ronaldo",
+        "Lionel Messi",
+        "Ali Daei",
+        "Neymar",
+        "Robert Lewandowski",
+        "Luis Suárez",
+        "Miroslav Klose"
+      ]
+    },
+    {
+      "category": "Won Copa América and UEFA Champions League",
+      "players": [
+        "Lionel Messi",
+        "Ángel Di María",
+        "Dani Alves",
+        "Carlos Tévez",
+        "Ronaldinho",
+        "Kaká"
+      ]
+    },
+    {
+      "category": "Scored a hat-trick in a Champions League knockout match",
+      "players": [
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Robert Lewandowski",
+        "Erling Haaland",
+        "Kylian Mbappé",
+        "Karim Benzema",
+        "Lucas Moura"
+      ]
+    },
+    {
+      "category": "Played for Atlético Madrid and Chelsea",
+      "players": [
+        "Fernando Torres",
+        "Diego Costa",
+        "Álvaro Morata",
+        "Thibaut Courtois",
+        "Filipe Luís",
+        "Radamel Falcao"
+      ]
+    },
+    {
+      "category": "FIFA World Cup Golden Ball winners",
+      "players": [
+        "Ronaldo Nazário",
+        "Oliver Kahn",
+        "Zinedine Zidane",
+        "Diego Forlán",
+        "Lionel Messi",
+        "Luka Modrić"
+      ]
+    },
+    {
+      "category": "Won the UEFA Champions League with two different clubs",
+      "players": [
+        "Clarence Seedorf",
+        "Samuel Eto'o",
+        "Cristiano Ronaldo",
+        "Xabi Alonso",
+        "Gerard Piqué",
+        "Deco",
+        "Thiago Alcântara",
+        "Mateo Kovačić"
+      ]
+    },
+    {
+      "category": "Won both Premier League and La Liga titles",
+      "players": [
+        "Cristiano Ronaldo",
+        "Cesc Fàbregas",
+        "Yaya Touré",
+        "Gerard Piqué",
+        "David Beckham",
+        "Thierry Henry",
+        "Ruud van Nistelrooy",
+        "Xabi Alonso"
+      ]
+    },
+    {
+      "category": "Played for Everton and Manchester United",
+      "players": [
+        "Wayne Rooney",
+        "Marouane Fellaini",
+        "Romelu Lukaku",
+        "Phil Neville",
+        "Tim Howard",
+        "Louis Saha"
+      ]
+    },
+    {
+      "category": "FIFA Puskás Award winners",
+      "players": [
+        "Cristiano Ronaldo",
+        "Neymar",
+        "James Rodríguez",
+        "Mohamed Salah",
+        "Son Heung-min",
+        "Zlatan Ibrahimović",
+        "Olivier Giroud"
+      ]
+    },
+    {
+      "category": "Scored on Premier League debut",
+      "players": [
+        "Sergio Agüero",
+        "Mohamed Salah",
+        "Pierre-Emerick Aubameyang",
+        "Marcus Rashford",
+        "Zlatan Ibrahimović",
+        "Wayne Rooney"
+      ]
+    },
+    {
+      "category": "Golden Boy award winners",
+      "players": [
+        "Rafael van der Vaart",
+        "Wayne Rooney",
+        "Lionel Messi",
+        "Cesc Fàbregas",
+        "Sergio Agüero",
+        "Anderson",
+        "Alexandre Pato",
+        "Mario Balotelli",
+        "Mario Götze",
+        "Isco",
+        "Paul Pogba",
+        "Raheem Sterling",
+        "Anthony Martial",
+        "Renato Sanches",
+        "Kylian Mbappé",
+        "Matthijs de Ligt",
+        "João Félix",
+        "Erling Haaland",
+        "Pedri",
+        "Gavi",
+        "Jude Bellingham"
+      ]
+    },
+    {
+      "category": "UEFA Men's Player of the Year winners",
+      "players": [
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Luka Modrić",
+        "Virgil van Dijk",
+        "Robert Lewandowski",
+        "Jorginho",
+        "Karim Benzema",
+        "Erling Haaland",
+        "Andrés Iniesta",
+        "Franck Ribéry"
+      ]
+    },
+    {
+      "category": "Played for both AC Milan and Inter Milan",
+      "players": [
+        "Andrea Pirlo",
+        "Zlatan Ibrahimović",
+        "Leonardo Bonucci",
+        "Clarence Seedorf",
+        "Hernán Crespo",
+        "Ronaldo Nazário",
+        "Christian Vieri"
+      ]
+    },
+    {
+      "category": "Wore the number 7 shirt for Manchester United",
+      "players": [
+        "David Beckham",
+        "Cristiano Ronaldo",
+        "Antonio Valencia",
+        "Edinson Cavani",
+        "Michael Owen",
+        "Ángel Di María",
+        "Alexis Sánchez",
+        "Memphis Depay"
+      ]
+    },
+    {
+      "category": "Transfers worth €100 million or more",
+      "players": [
+        "Neymar",
+        "Kylian Mbappé",
+        "João Félix",
+        "Philippe Coutinho",
+        "Cristiano Ronaldo",
+        "Ousmane Dembélé",
+        "Paul Pogba",
+        "Antoine Griezmann",
+        "Eden Hazard",
+        "Romelu Lukaku",
+        "Jack Grealish",
+        "Enzo Fernández",
+        "Moisés Caicedo",
+        "Declan Rice",
+        "Jude Bellingham",
+        "Gareth Bale"
+      ]
+    },
+    {
+      "category": "South American players who won the Premier League",
+      "players": [
+        "Sergio Agüero",
+        "Fernandinho",
+        "Gabriel Jesus",
+        "Carlos Tévez",
+        "Gilberto Silva",
+        "Antonio Valencia",
+        "David Luiz",
+        "Roberto Firmino"
+      ]
+    },
+    {
+      "category": "Defenders with 10+ Premier League goals",
+      "players": [
+        "John Terry",
+        "Leighton Baines",
+        "Marcos Alonso",
+        "Gary Cahill",
+        "Ashley Cole",
+        "Branislav Ivanović"
+      ]
+    },
+    {
+      "category": "European Championship Golden Boot winners",
+      "players": [
+        "David Villa",
+        "Fernando Torres",
+        "Antoine Griezmann",
+        "Cristiano Ronaldo",
+        "Milan Baroš"
+      ]
+    },
+    {
+      "category": "Played for Real Madrid and Juventus",
+      "players": [
+        "Cristiano Ronaldo",
+        "Zinedine Zidane",
+        "Gonzalo Higuaín",
+        "Sami Khedira",
+        "Fabio Cannavaro",
+        "Álvaro Morata"
+      ]
+    },
+    {
+      "category": "Played for Arsenal and Chelsea",
+      "players": [
+        "Ashley Cole",
+        "Cesc Fàbregas",
+        "Olivier Giroud",
+        "Petr Čech",
+        "David Luiz",
+        "Nicolas Anelka",
+        "William Gallas"
+      ]
+    },
+    {
+      "category": "Played for Chelsea and Liverpool",
+      "players": [
+        "Fernando Torres",
+        "Nicolas Anelka",
+        "Yossi Benayoun",
+        "Daniel Sturridge",
+        "Joe Cole",
+        "Glen Johnson"
+      ]
+    },
+    {
+      "category": "Played for Arsenal and Manchester City",
+      "players": [
+        "Kolo Touré",
+        "Gaël Clichy",
+        "Emmanuel Adebayor",
+        "Bacary Sagna",
+        "Samir Nasri",
+        "Patrick Vieira"
+      ]
+    },
+    {
+      "category": "Played for Liverpool and Manchester City",
+      "players": [
+        "Raheem Sterling",
+        "James Milner",
+        "Mario Balotelli",
+        "Craig Bellamy",
+        "Dietmar Hamann",
+        "Daniel Sturridge"
+      ]
+    },
+    {
+      "category": "Played for Real Madrid and Tottenham Hotspur",
+      "players": [
+        "Gareth Bale",
+        "Luka Modrić",
+        "Rafael van der Vaart",
+        "Emmanuel Adebayor",
+        "Jonathan Woodgate"
+      ]
+    },
+    {
+      "category": "Played for Arsenal and Juventus",
+      "players": [
+        "Thierry Henry",
+        "Aaron Ramsey",
+        "Wojciech Szczęsny",
+        "Patrick Vieira",
+        "Nicklas Bendtner"
+      ]
+    },
+    {
+      "category": "Played for AC Milan and Juventus",
+      "players": [
+        "Andrea Pirlo",
+        "Gonzalo Higuaín",
+        "Leonardo Bonucci",
+        "Filippo Inzaghi",
+        "Zlatan Ibrahimović"
+      ]
+    },
+    {
+      "category": "Played for Real Madrid and Liverpool",
+      "players": [
+        "Xabi Alonso",
+        "Michael Owen",
+        "Steve McManaman",
+        "Álvaro Arbeloa",
+        "Fernando Morientes"
+      ]
+    },
+    {
+      "category": "Played for Barcelona and Chelsea",
+      "players": [
+        "Cesc Fàbregas",
+        "Pedro",
+        "Deco",
+        "Samuel Eto'o",
+        "Eidur Gudjohnsen",
+        "Juliano Belletti"
+      ]
+    },
+    {
+      "category": "Played for AC Milan and Barcelona",
+      "players": [
+        "Ronaldinho",
+        "Zlatan Ibrahimović",
+        "Rivaldo",
+        "Kevin-Prince Boateng",
+        "Bojan Krkić"
+      ]
+    },
+    {
+      "category": "Won league titles in 3 of Europe's top 5 leagues",
+      "players": [
+        "Cristiano Ronaldo",
+        "Zlatan Ibrahimović",
+        "Thierry Henry",
+        "David Beckham",
+        "Arjen Robben",
+        "Dani Alves",
+        "Sami Khedira"
+      ]
+    },
+    {
+      "category": "Spent entire professional career at one club",
+      "players": [
+        "Francesco Totti",
+        "Paolo Maldini",
+        "Ryan Giggs",
+        "Carles Puyol",
+        "Jamie Carragher"
+      ]
+    },
+    {
+      "category": "Scored in multiple Champions League finals",
+      "players": [
+        "Raúl",
+        "Samuel Eto'o",
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Sergio Ramos",
+        "Gareth Bale",
+        "Mario Mandžukić"
+      ]
+    },
+    {
+      "category": "FIFA World Cup Golden Boot winners (2002–2022)",
+      "players": [
+        "Ronaldo Nazário",
+        "Miroslav Klose",
+        "Thomas Müller",
+        "James Rodríguez",
+        "Harry Kane",
+        "Kylian Mbappé"
+      ]
+    }
+  ]
+}

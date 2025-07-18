@@ -1,7 +1,7 @@
 // src/utils/puzzleGenerator.ts
 import seedrandom from 'seedrandom'
 import { shuffle } from './shuffle'
-import categories from '../data/categories.json'
+import raw from '../data/categories.json'
 
 export interface PuzzleGroup {
   category: string
@@ -9,20 +9,34 @@ export interface PuzzleGroup {
 }
 
 export function generatePuzzle(seed?: string): PuzzleGroup[] {
+  // deterministic RNG if seed provided, else use Math.random
   const rng = seed ? seedrandom(seed) : Math.random
+  // JSON has shape { categories: PuzzleGroup[] }
+  const allCategories = (raw as { categories: PuzzleGroup[] }).categories
+
   while (true) {
-    const picks = shuffle(
-      categories as PuzzleGroup[],
-      () => (typeof rng === 'function' ? rng() : rng())
-    ).slice(0, 4)
-    const groups = picks.map(g => ({
-      category: g.category,
-      players: shuffle(
-        g.players,
-        () => (typeof rng === 'function' ? rng() : rng())
-      ).slice(0, 4),
+    // shuffle categories with RNG
+    const cats = shuffle(allCategories, () => rng())
+    const picks: PuzzleGroup[] = []
+    const used = new Set<string>()
+
+    for (const c of cats) {
+      // skip if any player in this category already used
+      if (c.players.some(p => used.has(p))) continue
+      picks.push(c)
+      c.players.forEach(p => used.add(p))
+      if (picks.length === 4) break
+    }
+
+    if (picks.length < 4) {
+      // couldn't find 4 fully disjoint categories—retry
+      continue
+    }
+
+    // sample exactly 4 players per picked category, using same RNG
+    return picks.map(c => ({
+      category: c.category,
+      players: shuffle(c.players, () => rng()).slice(0, 4),
     }))
-    const all = groups.flatMap(g => g.players)
-    if (new Set(all).size === 16) return groups
   }
 }
