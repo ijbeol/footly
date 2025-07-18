@@ -13,6 +13,8 @@ const MAX_INCORRECT = 4
 
 export default function App() {
   const [mode, setMode] = useState<'daily' | 'random'>('daily')
+  const [showHelp, setShowHelp] = useState(false)
+
   const {
     puzzle,
     deck,
@@ -129,6 +131,28 @@ export default function App() {
             Football Connections
           </h1>
 
+          {/* How to Play */}
+          <div className="flex justify-center mb-4">
+            <button
+              onClick={() => setShowHelp(!showHelp)}
+              className="text-sm text-white-600 bg-blue-300 hover:underline"
+            >
+              How to play
+            </button>
+          </div>
+          {showHelp && (
+            <div className="mb-4 p-3 bg-gray-50 border border-gray-200 rounded text-xs sm:text-sm">
+              <ul className="list-disc list-inside space-y-1">
+                <li>Select exactly four player cards that you think form a category.</li>
+                <li>Click <strong>Submit</strong> to check your guess.</li>
+                <li>You have {MAX_INCORRECT} wrong guesses before the game ends.</li>
+                <li>Use up to two <strong>Hints</strong> to reveal 2–3 related players.</li>
+                <li>Solve all four groups to win and see confetti!</li>
+              </ul>
+            </div>
+          )}
+
+          {/* Mode Switch */}
           <div className="flex justify-center space-x-2 mb-4">
             <button
               onClick={startDaily}
@@ -148,8 +172,7 @@ export default function App() {
             Mode: {mode === 'daily' ? 'Daily Puzzle' : 'Random Puzzle'}
           </div>
           <div className="text-center mb-2">
-            Streak: {stats.currentStreak}
-            {fire} | Best: {stats.bestStreak}
+            Streak: {stats.currentStreak}{fire} | Best: {stats.bestStreak}
           </div>
           <div className="text-center mb-4">
             Guesses left: {MAX_INCORRECT - incorrectCount}
